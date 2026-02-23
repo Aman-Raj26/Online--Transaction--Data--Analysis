@@ -12,8 +12,8 @@ if 'amount (inr)' in data.columns:
     print("Total Transaction Amount:", total_amount)
 
 # 2️⃣ Transaction Type Distribution (Pie Chart)
-if 'transaction_type' in data.columns:
-    type_counts = data['transaction_type'].value_counts()
+if 'transaction type' in data.columns:
+    type_counts = data['transaction type'].value_counts()
 
     plt.figure()
     plt.pie(type_counts, labels=type_counts.index, autopct='%1.1f%%')
@@ -32,4 +32,5 @@ if 'timestamp' in data.columns:
     plt.title("Monthly Transaction Amount")
     plt.xlabel("Month")
     plt.ylabel("Total Amount (INR)")
+
     plt.show()
